@@ -1,0 +1,54 @@
+.el-main-menu {
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: auto;
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            display: block;
+            margin-left: 0;
+
+            @media (min-width: 992px) {
+                display: inline-block;
+                margin-left: 24px;
+                margin-left: 1.5rem;
+                border-top: 0;
+            }
+
+            @media (min-width: 1200px) {
+                margin-left: 56px;
+                margin-left: 3.5rem;
+            }
+
+            & a {
+                @include transition(150ms);
+                display: inline-block;
+                width: auto;
+                font-size: 18px;
+                font-size: 1.125rem;
+                font-weight: 600;
+                line-height: normal;
+                color: white;
+
+                @media (min-width: 992px) {
+                    font-size: 20px;
+                    font-size: 1.25rem;
+                    text-align: right;
+                    padding: 0;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 24px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
