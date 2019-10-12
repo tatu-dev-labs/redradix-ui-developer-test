@@ -1,0 +1,23 @@
+.co-main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color2;
+    padding: 20px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+
+    @media (min-width: 992px) {
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        display: block;
+    }
+}
