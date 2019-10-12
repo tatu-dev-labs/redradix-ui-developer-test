@@ -1,13 +1,14 @@
 <header class="bl-header">
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex flex-row align-items-center">
+            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
                 <div class="el-header-logo flex-grow-1">
                     <% link_to '/' do %>
                     Company Name
                     <% end %>
                 </div>
                 
+                <%= partial "partials/components/co-main-menu" %>
             </div>
         </div>
     </div>
