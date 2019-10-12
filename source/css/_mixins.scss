@@ -1,0 +1,41 @@
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin horizontal-vertical-center($position, $move: true) {
+    position: $position;
+
+    @if $move {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    } @else {
+        top: 0;
+        left: 0;
+        transform: translate(-0,-0);
+    }
+}
+
+@mixin vertical-center($position, $move: true) {
+    position: $position;
+
+    @if $move {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    } @else {
+        top: 0;
+        left: 0;
+        transform: translate(-0,-0);
+    }
+}

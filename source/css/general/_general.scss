@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    $GENERALSTYLES
+\*------------------------------------*/
+html {
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    position: relative;
+    text-align: left;
+}
+
+strong {
+    font-weight: 500;
+}
+
+
+input:hover
+input:active,
+input:focus,
+textarea:active,
+textarea:hover,
+textarea:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline: 0 !important;
+}
+
+a.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+a {
+    color: blue;
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+input[type="text"],
+input[type="password"] {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    border-left: none;
+    padding: 0 0 0.625rem 0;
+}
+
+textarea {
+    resize: none;
+}
+
+:focus {
+    outline: none;
+}

@@ -1,0 +1,25 @@
+/*
+Archivos CSS de configuracion
+*/
+@import "mixins";
+@import "variables";
+@import "general/normalize";
+/*
+Librerias CSS necesarias para el proyecto
+*/
+@import "general/bootstrap/bootstrap";
+
+/*
+Archivos CSS Generales
+*/
+@import "general/fonts";
+@import "general/general";
+/*
+Archivos CSS para Atomic Design
+*/
+@import "elements/all";
+@import "components/all";
+@import "blocks/all";
+@import "templates/all";
+@import "pages/all";
+@import "overrides/all";

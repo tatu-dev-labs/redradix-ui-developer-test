@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js" lang="<%= I18n.locale %>" itemscope itemtype="http://schema.org/WebSite">
+
+<head>
+	<meta charset="utf-8">
+	<title><%= I18n.t(current_page.data.title) %></title>
+
+	<%= partial "partials/general/css" %>
+	<%= partial "partials/general/metas" %>
+	<%= partial "partials/general/headscripts" %>
+</head>
+
+<body class="<%= page_classes %>">
+	<%= partial "partials/blocks/bl-header" %>
+
+    <%= yield %>
+    <%= partial "partials/blocks/bl-footer" %>
+    <%= partial "partials/general/footerscripts" %>
+</body>
+
+</html>
