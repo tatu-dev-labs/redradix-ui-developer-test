@@ -1,5 +1,5 @@
 .el-burger-menu {
-    @include transition(150ms)
+    @include transition(150ms);
     font-size: 26px;
     font-size: 1.625rem;
     color: white;
@@ -10,7 +10,7 @@
     }
 
     &:hover {
-        @include transition(150ms)
+        @include transition(150ms);
         color: $color3;
     }
 }
