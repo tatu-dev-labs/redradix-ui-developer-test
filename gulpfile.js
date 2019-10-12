@@ -15,6 +15,7 @@ el proyecto
 gulp.task('jsoptimize', () => {
     return gulp.src(['source/js/vendor/_jquery-3.3.1.js','source/js/vendor/_jquery.mousewheel.js','source/js/vendor/_bootstrap.bundle.js','source/js/_main.js'])
 	.pipe(concat('site.min.js'))
+	// .pipe(uglify())
 	.pipe(gulp.dest('source/js/'), { overwrite: true })
 	.pipe(gulp.dest('build/js/'), { overwrite: true });
 });
