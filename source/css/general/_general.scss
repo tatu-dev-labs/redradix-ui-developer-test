@@ -47,9 +47,9 @@ input[type="button"] {
 }
 
 a {
-    color: blue;
+    color: $color1;
     &:hover {
-        color: black;
+        color: $grey5;
         text-decoration: none;
     }
 }
