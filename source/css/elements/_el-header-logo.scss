@@ -1,0 +1,15 @@
+.el-header-logo {
+    width: 100%;
+    max-width: 220.96px;
+    height: 29.63px;
+    background-image: url('/images/company-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -99999px;
+
+    & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
