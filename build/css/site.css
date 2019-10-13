@@ -937,6 +937,24 @@ pre code {
   }
 }
 
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1940px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2500px;
+  }
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -10843,201 +10861,211 @@ Archivos CSS Generales
 */
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gTD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3g3D_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gbD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gfD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD_vx3rCs.woff2) format("woff2");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOX-hpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOVuhpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOXuhpKKSTj5PW.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUehpKKSTj5PW.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOXehpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOXOhpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format("woff2");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gTD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOX-hpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3g3D_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOVuhpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXuhpKKSTj5PW.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUehpKKSTj5PW.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
 }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gbD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXehpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gfD_vx3rCubqg.woff2) format("woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXOhpKKSTj5PW.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_vx3rCs.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gTD_vx3rCubqg.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3g3D_vx3rCubqg.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gbD_vx3rCubqg.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gfD_vx3rCubqg.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format("woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -11051,17 +11079,17 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  color: black;
+  color: #484848;
   position: relative;
   text-align: left;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 900;
 }
 
 input:hover input:active,
@@ -11084,11 +11112,11 @@ input[type="button"] {
 }
 
 a {
-  color: blue;
+  color: #B993D6;
 }
 
 a:hover {
-  color: black;
+  color: #484848;
   text-decoration: none;
 }
 
@@ -11107,6 +11135,12 @@ textarea {
 
 :focus {
   outline: none;
+}
+
+main {
+  background-color: #F0F2F9;
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 
 /*!
@@ -14452,6 +14486,11 @@ Importar todos los archivos .scss de la carpeta
 .el-main-menu ul li {
   display: block;
   margin-left: 0;
+  margin-top: 10px;
+}
+
+.el-main-menu ul li:first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 992px) {
@@ -14459,6 +14498,7 @@ Importar todos los archivos .scss de la carpeta
     display: inline-block;
     margin-left: 24px;
     margin-left: 1.5rem;
+    margin-top: 0;
     border-top: 0;
   }
 }
@@ -14475,8 +14515,8 @@ Importar todos los archivos .scss de la carpeta
   transition: 150ms;
   display: inline-block;
   width: auto;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: normal;
   color: white;
@@ -14545,11 +14585,33 @@ Importar todos los archivos .scss de la carpeta
 }
 
 .el-main-menu-close-button {
+  -webkit-transition: 150ms;
+  transition: 150ms;
   position: absolute;
   right: 30px;
   top: 15px;
   font-size: 40px;
   color: white;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .el-main-menu-close-button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.el-main-menu-close-button:hover {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  color: #C4CCE8;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .el-main-menu-close-button:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 /*
@@ -14590,6 +14652,34 @@ Importar todos los archivos .scss de la carpeta
   background: -webkit-gradient(linear, left top, right top, from(#b993d6), to(#8ca6db));
   background: linear-gradient(to right, #b993d6 0%, #8ca6db 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+}
+
+.bl-main {
+  border-radius: 8px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+}
+
+.bl-footer {
+  background-color: #484848;
+  padding: 15px 0;
+  height: 86px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bl-footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .bl-footer p {
+    text-align: left;
+  }
 }
 
 /*

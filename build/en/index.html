@@ -104,11 +104,40 @@ gtag('config', 'XX-XXXXXXXXX-X');
 </header>
 
     <main>
-<!--
-  Se importan los partials necesarios para cada pagina
-!-->
+	<div class="container">
+		<div class="col-12">
+			<div class="bl-main">
+                <div class="bl-tabs">
+    <ul class="nav nav-tabs responsive" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content responsive" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+</div>
+			</div>
+		</div>
+	</div>
 </main>
-    <footer class="bl-footer"></footer>
+    <footer class="bl-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Fake Project © 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="/js/site.min.js" async></script>
 </body>
