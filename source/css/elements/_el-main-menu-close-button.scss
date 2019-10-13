@@ -1,7 +1,13 @@
 .el-main-menu-close-button {
+    @include transition(150ms);
     position: absolute;
     right: 30px;
     top: 15px;
     font-size: 40px;
     color: white;
+
+    &:hover {
+        @include transition(150ms);
+        color: $color3;
+    }
 }
