@@ -1,3 +1,11 @@
+$(window).resize(function(){
+    if (window.matchMedia("(min-width: 992px)").matches) {
+    $('.co-main-menu').removeClass("animated")
+    $('.co-main-menu').removeClass("slideInRight")
+    $('.co-main-menu').removeClass("slideOutRight")
+    }
+})
+
 function showMainMenu(e,obj) {
     e.preventDefault();
     e.stopPropagation();
