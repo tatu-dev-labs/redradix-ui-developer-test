@@ -1,4 +1,18 @@
 .bl-footer {
     background-color: $grey5;
     padding: 15px 0;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & p {
+        text-align: center;
+        color: white;
+        margin: 0;
+
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+    }
 }
