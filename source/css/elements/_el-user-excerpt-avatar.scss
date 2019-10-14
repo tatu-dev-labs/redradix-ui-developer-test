@@ -1,0 +1,41 @@
+.el-user-excerpt-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+    position: relative;
+    display: inline-block;
+
+    @media (min-width: 576px) {
+        margin-right: 32px;
+        margin-right: 2rem;
+        margin-top: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
+    }
+
+    @media (min-width: 992px) {
+        margin-right: 32px;
+        margin-right: 2rem;
+        margin-top: 0;
+    }
+
+    &:before {
+        content: "";
+        border-radius: 50%;
+        background-color: #60F560;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 13px;
+        top: 5px;
+        z-index: 99999;
+    }
+
+    & img {
+        width: 120px;
+    }
+}
