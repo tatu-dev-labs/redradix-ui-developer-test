@@ -1,0 +1,22 @@
+.el-user-excerpt-description {
+    color: $grey4;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 27px;
+    line-height: 1.6875rem;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 23px;
+        line-height: 1.4375rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 27px;
+        line-height: 1.6875rem;
+    }
+}
