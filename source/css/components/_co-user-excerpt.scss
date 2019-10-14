@@ -1,0 +1,21 @@
+.co-user-excerpt {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 576px) {
+        display: flex;
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+        display: flex;
+        text-align: left;
+    }
+}
