@@ -14614,6 +14614,105 @@ Importar todos los archivos .scss de la carpeta
   }
 }
 
+.nav-link.el-tabs-button {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  color: #AFAFAF;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  text-align: center;
+  border: none;
+  position: relative;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 35px 17px 35px;
+  padding: 1.0625rem 2.1875rem 1.0625rem 2.1875rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .nav-link.el-tabs-button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nav-link.el-tabs-button:hover {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  color: #484848;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .nav-link.el-tabs-button:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nav-link.el-tabs-button:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 17px;
+  width: 1px;
+  background-color: #E0E0E0;
+  display: inline-block;
+}
+
+.nav-link.el-tabs-button:after {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  content: "";
+  display: none;
+  height: 4px;
+  width: 0;
+  background: #B993D6;
+  background: -webkit-gradient(linear, left top, right top, from(#b993d6), to(#8ca6db));
+  background: linear-gradient(to right, #b993d6 0%, #8ca6db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+  position: absolute;
+  z-index: 99999999;
+  bottom: -3px;
+  left: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .nav-link.el-tabs-button:after {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-link.el-tabs-button:after {
+    display: block;
+  }
+}
+
+.nav-link.el-tabs-button[aria-selected="true"], .nav-link.el-tabs-button[aria-expanded="true"] {
+  color: #484848;
+  background-color: transparent;
+}
+
+.nav-link.el-tabs-button[aria-selected="true"]:after, .nav-link.el-tabs-button[aria-expanded="true"]:after {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  width: 100%;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .nav-link.el-tabs-button[aria-selected="true"]:after, .nav-link.el-tabs-button[aria-expanded="true"]:after {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 /*
 Importar todos los archivos .scss de la carpeta
 */
@@ -14659,6 +14758,15 @@ Importar todos los archivos .scss de la carpeta
   background-color: white;
   -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+}
+
+.bl-tabs .nav-tabs {
+  border-bottom: 4px solid #E0E0E0;
+}
+
+.bl-tabs .tab-content {
+  padding: 64px 56px;
+  padding: 4rem 3.5rem;
 }
 
 .bl-footer {
