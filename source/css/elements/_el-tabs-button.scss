@@ -1,0 +1,66 @@
+.nav-link.el-tabs-button {
+    @include transition(150ms);
+    color: $grey4;
+    font-size: 20px;	
+    font-size: 1.25rem;	
+    font-weight: 600;	
+    line-height: 27px;	
+    line-height: 1.6875rem;	
+    text-align: center;
+    border: none;
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 35px 17px 35px;
+    padding: 1.0625rem 2.1875rem 1.0625rem 2.1875rem;
+
+    &:hover {
+        @include transition(150ms);
+        color: $grey5;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 17px;
+        width: 1px;
+        background-color: $grey2;
+        display: inline-block;
+    }
+
+    &:after {
+        @include transition(250ms);
+        content: "";
+        display: none;
+        height: 4px;
+        width: 0;
+        background: $color1;
+        background: -moz-linear-gradient(left,  rgba($color1,1) 0%, rgba($color2,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+        background: linear-gradient(to right,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+        position: absolute;
+        z-index: 99999999;
+        bottom: -3px;
+        left: 0;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &[aria-selected="true"],
+    &[aria-expanded="true"] {
+        color: $grey5;
+        background-color: transparent;
+
+        &:after {
+            @include transition(250ms);
+            width: 100%;
+        }
+    }
+}
