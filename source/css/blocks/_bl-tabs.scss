@@ -7,6 +7,10 @@
     & .tab-content {
         padding: 64px 56px;
         padding: 4rem 3.5rem;
+        
+        & .tab-pane {
+            width: 100%;
+        }
     }
 
     & .card-block {
