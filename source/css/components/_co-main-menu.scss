@@ -5,7 +5,11 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: $color2;
+    background: $color1;
+    background: -moz-linear-gradient(left,  rgba($color1,1) 0%, rgba($color2,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+    background: linear-gradient(to right,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
     padding: 20px;
     padding: 1.25rem;
     display: none;
@@ -15,6 +19,7 @@
         width: auto;
         height: auto;
         background-color: transparent;
+        background: none;
         padding: 0;
         display: block;
     }
