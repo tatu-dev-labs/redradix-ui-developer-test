@@ -1,0 +1,11 @@
+.bl-tabs {
+
+    & .nav-tabs {
+        border-bottom: 4px solid $grey2;
+    }
+
+    & .tab-content {
+        padding: 64px 56px;
+        padding: 4rem 3.5rem;
+    }
+}
