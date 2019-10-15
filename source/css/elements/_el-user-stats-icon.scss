@@ -1,0 +1,16 @@
+.el-user-stats-icon {
+    width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    margin-right: 10px;
+    margin-right: 0.625rem;
+    
+    &.--up {
+	    border-bottom: 24px solid $color4;
+    }
+
+    &.--down {
+	    border-top: 24px solid $color5;
+    }
+}
