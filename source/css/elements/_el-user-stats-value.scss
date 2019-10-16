@@ -5,4 +5,16 @@
     line-height: 4.75rem;
     color: $grey5;
     font-weight: 900;
+    @media (min-width: 992px) {
+        font-size: 40px;
+        font-size: 2.5rem;
+        line-height: 60px;
+        line-height: 3.75rem;
+    }
+    @media (min-width: 1200px) {
+        font-size: 56px;
+        font-size: 3.5rem;
+        line-height: 76px;
+        line-height: 4.75rem;
+    }
 }
