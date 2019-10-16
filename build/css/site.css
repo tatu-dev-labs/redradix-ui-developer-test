@@ -14713,16 +14713,254 @@ Importar todos los archivos .scss de la carpeta
   }
 }
 
+.el-user-excerpt-avatar {
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .el-user-excerpt-avatar {
+    margin-right: 32px;
+    margin-right: 2rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .el-user-excerpt-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .el-user-excerpt-avatar {
+    margin-right: 32px;
+    margin-right: 2rem;
+    margin-top: 0;
+  }
+}
+
+.el-user-excerpt-avatar:before {
+  content: "";
+  border-radius: 50%;
+  background-color: #60F560;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 13px;
+  top: 5px;
+  z-index: 99999;
+}
+
+.el-user-excerpt-avatar img {
+  width: 120px;
+}
+
+.el-user-excerpt-name {
+  color: #484848;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 33px;
+  line-height: 2.0625rem;
+  margin-bottom: 4px;
+}
+
+.el-user-excerpt-description {
+  color: #AFAFAF;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 27px;
+  line-height: 1.6875rem;
+}
+
+@media (min-width: 992px) {
+  .el-user-excerpt-description {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 23px;
+    line-height: 1.4375rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .el-user-excerpt-description {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+  }
+}
+
+.el-user-stats-icon {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  margin-right: 10px;
+  margin-right: 0.625rem;
+}
+
+.el-user-stats-icon.--up {
+  border-bottom: 24px solid #60F560;
+}
+
+.el-user-stats-icon.--down {
+  border-top: 24px solid #F56060;
+}
+
+.el-user-stats-value {
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 76px;
+  line-height: 4.75rem;
+  color: #484848;
+  font-weight: 900;
+}
+
+@media (min-width: 992px) {
+  .el-user-stats-value {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 60px;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .el-user-stats-value {
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 76px;
+    line-height: 4.75rem;
+  }
+}
+
+.el-user-stats-description {
+  color: #AFAFAF;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .el-user-stats-description {
+    margin-bottom: 0;
+  }
+}
+
+.el-user-rating-value {
+  color: #AFAFAF;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+}
+
+.el-user-rating-value span {
+  color: #484848;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 76px;
+  line-height: 4.75rem;
+  font-weight: 600;
+}
+
+.progress.el-user-rating-progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #D8D8D8;
+}
+
+.progress.el-user-rating-progress .progress-bar {
+  background-color: #60F560;
+}
+
+.el-simple-accordion-view-more {
+  color: #484848;
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding: 0;
+  position: relative;
+  z-index: 999999;
+}
+
+.el-simple-accordion-view-more:hover {
+  cursor: pointer;
+  color: #B993D6;
+}
+
+.el-simple-accordion-view-more i {
+  margin-right: 5px;
+}
+
+.el-simple-accordion-text {
+  padding: 0;
+  border: 0;
+}
+
+.el-simple-accordion-overlay {
+  width: 100%;
+  height: 155px;
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+  z-index: 888888;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(64%, white), color-stop(98%, white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 64%, white 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.el-hv-line-separator {
+  margin: 15px 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .el-hv-line-separator {
+    margin: 0;
+  }
+}
+
+.el-hv-line-separator:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #E0E0E0;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .el-hv-line-separator:before {
+    width: 1px;
+    height: 100%;
+  }
+}
+
 /*
 Importar todos los archivos .scss de la carpeta
 */
 .co-main-menu {
   position: fixed;
+  z-index: 999999999;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #8CA6DB;
+  background: #B993D6;
+  background: -webkit-gradient(linear, left top, right top, from(#b993d6), to(#8ca6db));
+  background: linear-gradient(to right, #b993d6 0%, #8ca6db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
   padding: 20px;
   padding: 1.25rem;
   display: none;
@@ -14734,9 +14972,67 @@ Importar todos los archivos .scss de la carpeta
     width: auto;
     height: auto;
     background-color: transparent;
+    background: none;
     padding: 0;
     display: block;
   }
+}
+
+.co-user-excerpt {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .co-user-excerpt {
+    display: flex;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .co-user-excerpt {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .co-user-excerpt {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.co-user-stats {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.co-user-stats .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.co-simple-accordion.--excerpted .collapse {
+  display: block;
+  height: 282px;
+  overflow: hidden;
+}
+
+.co-simple-accordion.--excerpted .collapsing {
+  height: 282px;
+}
+
+.co-simple-accordion.--excerpted .collapse.show {
+  height: auto;
 }
 
 /*
@@ -14758,6 +15054,7 @@ Importar todos los archivos .scss de la carpeta
   background-color: white;
   -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+  margin-top: -42px;
 }
 
 .bl-tabs .nav-tabs {
@@ -14767,6 +15064,23 @@ Importar todos los archivos .scss de la carpeta
 .bl-tabs .tab-content {
   padding: 64px 56px;
   padding: 4rem 3.5rem;
+}
+
+.bl-tabs .tab-content .tab-pane {
+  width: 100%;
+}
+
+.bl-tabs .card-block {
+  padding: 30px;
+  padding: 1.875rem;
+}
+
+.bl-user-stats {
+  width: 100%;
+}
+
+.bl-user-rating {
+  width: 100%;
 }
 
 .bl-footer {
