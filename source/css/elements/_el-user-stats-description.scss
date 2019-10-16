@@ -1,3 +1,7 @@
 .el-user-stats-description {
     color: $grey4;
+    margin-bottom: 20px;
+    @media (min-width: 992px) {
+        margin-bottom: 0;
+    } 
 }
