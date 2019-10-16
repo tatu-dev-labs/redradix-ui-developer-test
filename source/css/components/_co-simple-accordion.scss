@@ -1,0 +1,18 @@
+.co-simple-accordion {
+    
+    &.--excerpted {
+        & .collapse {
+            display: block;
+            height: 282px;
+            overflow: hidden;
+        }
+        
+        & .collapsing {
+            height: 282px;
+        }
+
+        & .collapse.show {
+            height: auto;
+        }
+    }
+}
