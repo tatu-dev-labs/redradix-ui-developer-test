@@ -1,3 +1,9 @@
 .progress.el-user-rating-progress {
-    
+    height: 8px;
+    @include border-radius(4px);
+    background-color: $grey3;
+
+    & .progress-bar {
+        background-color: $color4;
+    }
 }
