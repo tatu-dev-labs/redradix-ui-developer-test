@@ -3,9 +3,14 @@
     background: none;
 	border: none;
     font-weight: 600;
+    padding: 0;
     
     &:hover {
         cursor: pointer;
         color: $color1;
+    }
+
+    & i {
+        margin-right: 5px;
     }
 }
