@@ -10,6 +10,33 @@ $(window).resize(function(){
     }
 });
 
+$('.co-simple-accordion .el-simple-accordion-view-more').on('click', function () {
+    $('.collapse button i').css({
+        transform: "translate(0)"
+    });
+    if ($(this).hasClass("collapsed")) {
+        $(this).find('i').animate({  borderSpacing: 180 }, {
+            step: function(now,fx) {
+            $(this).css('-webkit-transform','rotate('+now+'deg)');
+            $(this).css('-moz-transform','rotate('+now+'deg)');
+            $(this).css('transform','rotate('+now+'deg)');
+            },
+            duration:'150'
+        },'linear');
+        $(this).prev().fadeOut(150);
+    } else {
+        $(this).find('i').animate({  borderSpacing: 0 }, {
+            step: function(now,fx) {
+            $(this).css('-webkit-transform','rotate('+now+'deg)');
+            $(this).css('-moz-transform','rotate('+now+'deg)');
+            $(this).css('transform','rotate('+now+'deg)');
+            },
+            duration:'150'
+        },'linear');
+        $(this).prev().fadeIn(150);
+    }
+});
+
 function showMainMenu(e,obj) {
     e.preventDefault();
     e.stopPropagation();

@@ -1,0 +1,15 @@
+.el-user-rating-value {
+    color: $grey4;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 44px;
+    line-height: 2.75rem;
+    & span {
+        color: $grey5;
+        font-size: 56px;
+        font-size: 3.5rem;
+        line-height: 76px;
+        line-height: 4.75rem;
+        font-weight: 600;
+    }
+}
