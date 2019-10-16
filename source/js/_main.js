@@ -23,6 +23,7 @@ $('.co-simple-accordion .el-simple-accordion-view-more').on('click', function ()
             },
             duration:'150'
         },'linear');
+        $(this).prev().fadeOut(150);
     } else {
         $(this).find('i').animate({  borderSpacing: 0 }, {
             step: function(now,fx) {
@@ -32,6 +33,7 @@ $('.co-simple-accordion .el-simple-accordion-view-more').on('click', function ()
             },
             duration:'150'
         },'linear');
+        $(this).prev().fadeIn(150);
     }
 });
 
