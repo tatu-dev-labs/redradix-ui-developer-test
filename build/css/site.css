@@ -14968,6 +14968,35 @@ Importar todos los archivos .scss de la carpeta
 .el-option-buttons-icon {
   font-size: 55px;
   font-size: 3.4375rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+}
+
+.el-option-buttons-icon.icon-ui-Messages {
+  font-size: 70px;
+  font-size: 4.375rem;
+}
+
+@media (min-width: 768px) {
+  .el-option-buttons-icon {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+  .el-option-buttons-icon.icon-ui-Messages {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .el-option-buttons-icon {
+    font-size: 55px;
+    font-size: 3.4375rem;
+  }
+  .el-option-buttons-icon.icon-ui-Messages {
+    font-size: 70px;
+    font-size: 4.375rem;
+  }
 }
 
 .el-hv-line-separator {
@@ -15185,10 +15214,66 @@ Importar todos los archivos .scss de la carpeta
   }
 }
 
+@media (min-width: 768px) {
+  .co-option-buttons {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .co-option-buttons {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
 .co-option-buttons .el-option-buttons-icon,
 .co-option-buttons .el-option-buttons-name {
   position: relative;
   z-index: 99999;
+}
+
+.co-preloader {
+  position: fixed;
+  z-index: 9999999999;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+.co-preloader .el-preloader-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.co-preloader .el-preloader-icon .spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: .25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /*
@@ -15241,6 +15326,13 @@ Importar todos los archivos .scss de la carpeta
 
 .bl-option-buttons {
   width: 100%;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .bl-option-buttons {
+    margin-top: 0;
+  }
 }
 
 .bl-footer {
@@ -15273,3 +15365,144 @@ Importar todos los archivos .scss de la carpeta
 /*
 Importar todos los archivos .scss de la carpeta
 */
+.fadeInShor {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInUpShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUpShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUpShort {
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+}
+
+@-webkit-keyframes fadeInDownShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDownShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDownShort {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeftShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeftShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeftShort {
+  -webkit-animation-name: fadeInLeftShort;
+  animation-name: fadeInLeftShort;
+}
+
+@-webkit-keyframes fadeInRightShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightShort {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRightShort {
+  -webkit-animation-name: fadeInRightShort;
+  animation-name: fadeInRightShort;
+}
