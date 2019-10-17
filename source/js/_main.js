@@ -1,5 +1,6 @@
 $(document).ready(function(){
     (function($) { fakewaffle.responsiveTabs(['sm','md']); })(jQuery);
+    new WOW().init();
 });
 
 $(window).resize(function(){
