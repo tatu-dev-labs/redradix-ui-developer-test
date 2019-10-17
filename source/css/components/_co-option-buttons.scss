@@ -1,3 +1,17 @@
 .co-option-buttons {
-    
+    height: 184px;
+	width: 202px;
+	border-radius: 8px;
+    background-color: $grey1;
+    color: $color2;
+    border: 0;
+
+    &:hover {
+        background: $color1;
+        background: -moz-linear-gradient(left,  rgba($color1,1) 0%, rgba($color2,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+        background: linear-gradient(to right,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+        color: white;
+    }
 }
