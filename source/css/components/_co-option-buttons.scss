@@ -53,6 +53,17 @@
         }
     }
 
+    @media (min-width: 768px) {
+        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+        font-size: 1.5rem;
+
+    }
+
     & .el-option-buttons-icon,
     & .el-option-buttons-name {
         position: relative;
