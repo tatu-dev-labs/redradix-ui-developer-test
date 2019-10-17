@@ -17,4 +17,14 @@
         padding: 30px;
         padding: 1.875rem;
     }
+
+    & .card-header {
+        background: white;
+    }
+
+    .card.nav-item {
+        margin: 0 0 5px 0;
+        border: 1px solid $color1;
+        border-radius: 0;
+    }
 }
