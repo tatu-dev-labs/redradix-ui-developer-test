@@ -15316,6 +15316,16 @@ Importar todos los archivos .scss de la carpeta
   padding: 1.875rem;
 }
 
+.bl-tabs .card-header {
+  background: white;
+}
+
+.bl-tabs .card.nav-item {
+  margin: 0 0 5px 0;
+  border: 1px solid #B993D6;
+  border-radius: 0;
+}
+
 .bl-user-stats {
   width: 100%;
 }
@@ -15326,7 +15336,8 @@ Importar todos los archivos .scss de la carpeta
 
 .bl-option-buttons {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 64px;
+  margin-top: 4rem;
 }
 
 @media (min-width: 992px) {
