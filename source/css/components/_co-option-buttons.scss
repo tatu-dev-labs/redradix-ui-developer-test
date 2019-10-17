@@ -1,0 +1,61 @@
+.co-option-buttons {
+    @include transition(150ms);
+    height: 184px;
+    width: 100%;
+	max-width: 202px;
+	border-radius: 8px;
+    background-color: $grey1;
+    color: $color2;
+    border: 0;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 33px;
+    line-height: 2.0625rem;
+    font-weight: 900;
+
+    &:before {
+        @include transition(300ms);
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 0;
+        height: 100%;
+        opacity: 0;
+        z-index: 88888;
+    }
+
+    &:hover {
+        top: -5px;
+        @include transition(300ms);
+        -webkit-box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24);
+        -moz-box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24);
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24);
+        color: white;
+
+        &:before {
+            @include transition(300ms);
+            opacity: 1;
+            width: 100%;
+            background: $color1;        
+            background: -moz-linear-gradient(left,  rgba($color1,1) 0%, rgba($color2,1) 100%);
+            background: -webkit-linear-gradient(left,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+            background: linear-gradient(to right,  rgba($color1,1) 0%,rgba($color2,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+        }
+    }
+
+    & .el-option-buttons-icon,
+    & .el-option-buttons-name {
+        position: relative;
+        z-index: 99999;
+    }
+}

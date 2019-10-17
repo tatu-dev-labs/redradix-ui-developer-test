@@ -11069,6 +11069,55 @@ Archivos CSS Generales
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* UI TEST FONTS */
+@font-face {
+  font-family: 'ui-test';
+  src: url("/fonts/ui-test.eot?lbhebi");
+  src: url("/fonts/ui-test.eot?lbhebi#iefix") format("embedded-opentype"), url("/fonts/ui-test.ttf?lbhebi") format("truetype"), url("/fonts/ui-test.woff?lbhebi") format("woff"), url("/fonts/ui-test.svg?lbhebi#ui-test") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-ui-"], [class*=" icon-ui-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ui-test' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ui-Calendar:before {
+  content: "\e900";
+}
+
+.icon-ui-Diffusion:before {
+  content: "\e901";
+}
+
+.icon-ui-Messages:before {
+  content: "\e902";
+}
+
+.icon-ui-Profile:before {
+  content: "\e903";
+}
+
+.icon-ui-Settings:before {
+  content: "\e904";
+}
+
+.icon-ui-Stats:before {
+  content: "\e905";
+}
+
+/* END UI TEST FONTS */
 /*------------------------------------*\
     $GENERALSTYLES
 \*------------------------------------*/
@@ -14916,6 +14965,11 @@ Importar todos los archivos .scss de la carpeta
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
+.el-option-buttons-icon {
+  font-size: 55px;
+  font-size: 3.4375rem;
+}
+
 .el-hv-line-separator {
   margin: 15px 0;
   padding: 0;
@@ -14945,6 +14999,11 @@ Importar todos los archivos .scss de la carpeta
     width: 1px;
     height: 100%;
   }
+}
+
+.el-horizontal-line-separator {
+  margin: 64px 0;
+  border-top: 1px solid #E0E0E0;
 }
 
 /*
@@ -15040,6 +15099,96 @@ Importar todos los archivos .scss de la carpeta
   height: auto;
 }
 
+.co-option-buttons {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  height: 184px;
+  width: 100%;
+  max-width: 202px;
+  border-radius: 8px;
+  background-color: #F0F2F9;
+  color: #8CA6DB;
+  border: 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 33px;
+  line-height: 2.0625rem;
+  font-weight: 900;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .co-option-buttons {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.co-option-buttons:before {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: 88888;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .co-option-buttons:before {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.co-option-buttons:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  top: -5px;
+  color: white;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .co-option-buttons:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.co-option-buttons:hover:before {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  opacity: 1;
+  width: 100%;
+  background: #B993D6;
+  background: -webkit-gradient(linear, left top, right top, from(#b993d6), to(#8ca6db));
+  background: linear-gradient(to right, #b993d6 0%, #8ca6db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b993d6', endColorstr='#8ca6db',GradientType=1 );
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .co-option-buttons:hover:before {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.co-option-buttons .el-option-buttons-icon,
+.co-option-buttons .el-option-buttons-name {
+  position: relative;
+  z-index: 99999;
+}
+
 /*
 Importar todos los archivos .scss de la carpeta
 */
@@ -15085,6 +15234,10 @@ Importar todos los archivos .scss de la carpeta
 }
 
 .bl-user-rating {
+  width: 100%;
+}
+
+.bl-option-buttons {
   width: 100%;
 }
 
