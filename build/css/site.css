@@ -15152,9 +15152,11 @@ Importar todos los archivos .scss de la carpeta
 }
 
 .co-option-buttons:hover {
+  top: -5px;
   -webkit-transition: 300ms;
   transition: 300ms;
-  top: -5px;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.24);
   color: white;
 }
 
