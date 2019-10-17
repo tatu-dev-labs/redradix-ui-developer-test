@@ -7,6 +7,9 @@ window.onload = function() {
 $(document).ready(function(){
     (function($) { fakewaffle.responsiveTabs(['sm','md']); })(jQuery);
     new WOW().init();
+    $('.collapse').removeClass('show');
+    $('#collapse-firstTab').addClass('show');
+    $('[href="#collapse-firstTab"').attr("aria-expanded","true");
 });
 
 $(window).resize(function(){
