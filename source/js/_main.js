@@ -1,3 +1,9 @@
+window.onload = function() {
+    $(".co-preloader").fadeOut("300", function() {
+        $(this).remove();
+    });
+};
+
 $(document).ready(function(){
     (function($) { fakewaffle.responsiveTabs(['sm','md']); })(jQuery);
     new WOW().init();
