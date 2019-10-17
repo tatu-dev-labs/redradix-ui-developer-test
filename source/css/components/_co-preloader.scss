@@ -1,0 +1,31 @@
+.co-preloader {
+    position: fixed;
+    z-index: 9999999999;
+    background: white;
+    width: 100%;
+    height: 100%;
+
+    & .el-preloader-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        & .spinner-border {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            vertical-align: text-bottom;
+            border: .25em solid currentColor;
+            border-right-color: transparent;
+            @include border-radius(50%);
+            -webkit-animation: spinner-border .75s linear infinite;
+            -moz-animation: spinner-border .75s linear infinite;
+            animation: spinner-border .75s linear infinite;
+        }
+    }
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
