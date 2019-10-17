@@ -1,4 +1,32 @@
 .el-option-buttons-icon {
     font-size: 55px;
     font-size: 3.4375rem;
+    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
+
+    &.icon-ui-Messages {
+        font-size: 70px;
+        font-size: 4.375rem;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 40px;
+        font-size: 2.5rem;
+
+        &.icon-ui-Messages {
+            font-size: 40px;
+            font-size: 2.5rem;
+        }
+    }
+    @media (min-width: 1200px) {
+        font-size: 55px;
+        font-size: 3.4375rem;
+
+        &.icon-ui-Messages {
+            font-size: 70px;
+            font-size: 4.375rem;
+        }
+    }
+
+    
 }
