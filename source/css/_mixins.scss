@@ -12,6 +12,12 @@
 	-moz-border-radius: $radius;
 }
 
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
 @mixin horizontal-vertical-center($position, $move: true) {
     position: $position;
 
