@@ -14,7 +14,7 @@
     justify-content: center;
 
     &:before {
-        @include transition(150ms);
+        @include transition(300ms);
         position: absolute;
         left: 0;
         top: 0;
@@ -26,11 +26,11 @@
     }
 
     &:hover {
-        @include transition(150ms);
+        @include transition(300ms);
         color: white;
 
         &:before {
-            @include transition(150ms);
+            @include transition(300ms);
             opacity: 1;
             width: 100%;
             background: $color1;        
