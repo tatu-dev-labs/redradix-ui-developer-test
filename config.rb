@@ -3,7 +3,7 @@
 activate :i18n, :langs => [:es, :en], :mount_at_root => :es
 
 compass_config do |config|
-  config.output_style = :expanded #:nested :compact :expanded :compressed
+  config.output_style = :compressed #:nested :compact :expanded :compressed
   config.sass_options = { :line_comments => false, :debug_info => false }
 end
 
